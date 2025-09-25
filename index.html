@@ -199,6 +199,17 @@
             -webkit-text-fill-color: transparent;
         }
 
+        /* Ensure contact section header is solid white and highly visible */
+        .contact-section .section-header h2 {
+            background: none;
+            background-clip: initial;
+            -webkit-background-clip: initial;
+            color: #ffffff;
+            -webkit-text-fill-color: #ffffff;
+            border-bottom-color: #ffffff;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
         /* Process Steps */
         .process-section {
             background: linear-gradient(135deg, #f0f8f0, #e6f3e6);
@@ -444,10 +455,12 @@
             }
         }
 
-        column;
+        .contact-section {
+        padding: 40px 0;
         text-align: center;
         gap: 20px;
         }
+
 
         .contact-grid {
             grid-template-columns: 1fr;
@@ -476,7 +489,7 @@
         .contact-section {
             padding: 40px 0;
         }
-        }
+        
 
         @media (max-width: 480px) {
             .container {
